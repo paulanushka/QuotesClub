@@ -17,6 +17,7 @@ var express=require("express"),
 
 
 mongoose.connect('mongodb://localhost/yelp_camp', {useNewUrlParser: true, useUnifiedTopology: true});
+//mongodb://heroku_70rbd8cx:heroku_70rbd8cx@ds221155.mlab.com:21155/heroku_70rbd8cx
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname+"/public"));
