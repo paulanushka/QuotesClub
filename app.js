@@ -16,7 +16,7 @@ var express=require("express"),
         indexRoutes=require("./routes/index");
 
 
-mongoose.connect('mongodb://localhost/yelp_camp', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://anushka:anushka@cluster0.kfn02.mongodb.net/<dbname>?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
   
 
 app.use(bodyParser.urlencoded({extended: true}));
