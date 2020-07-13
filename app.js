@@ -25,7 +25,7 @@ app.use(express.static(__dirname+"/public"));
 app.use(methodOverride("_method"));
 app.use(flash());
 //seedDB();
-
+// abhi kya problem hain ?? ??
 //passport config
 app.use(require("express-session")({
     secret:"hey there",
